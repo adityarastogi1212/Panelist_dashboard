@@ -1,0 +1,108 @@
+<!-- <h1 class="">Candidate List</h1> -->
+<!-- As a link -->
+<nav class="navbar navbar-custom">
+    <div class="container-fluid">
+      <h1>Panelist Dashboard</h1>
+    </div>
+  </nav>
+
+  <div class="container base">
+    <div class="col-sm">  
+
+    <div class="pn0">
+      <h2>Panelist Details</h2>
+    </div>
+
+    <div class="table-custom">
+      <table class="table table-striped ">
+          <!-- <thead>
+              <tr>
+                  <th>PS No</th>
+                  <th>Name</th>
+                  <th>Grade</th>
+                  <th>Email Id</th>
+                  
+              </tr>
+          </thead> -->
+          <!-- <tbody>
+              <tr *ngFor="let panel of panels">
+                  <td>{{panel.id}}</td>
+                  <td>{{panel.name}}</td>
+                  <td>{{panel.grade}}</td>
+                  <td>{{panel.email}}</td>
+              </tr>
+          </tbody> -->
+      </table>
+    </div>
+
+    </div>
+    <div class="col-sm">
+
+    <div class="pn4">
+      <button type="button btn" class="btn btn-success">Schedule Interview</button>
+    </div>
+    
+    <div class="pn2">
+      <!-- <h5>Meeting Scheduled : 11:30 AM</h5> -->
+      <button type="button btn" class="btn btn-success">Start the meeting</button>
+    </div>
+  </div>
+</div>  
+
+  <div class="pnl">
+    <h2>Candidate Details</h2>
+  </div>
+
+  <!-- <label id="example-radio-group-label">Select One Candidate</label>
+  <mat-radio-group
+    aria-labelledby="example-radio-group-label"
+    class="example-radio-group"
+    [(ngModel)]="favoriteCandidate">
+    <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+      {{season}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div>Starting Meeting with: {{favoriteCandidate}}</div> -->
+
+
+<div class="table-custom">
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <!-- <th><input type="checkbox" [checked]="isAllCheckBoxChecked()" (change)="checkAllCheckBox($event)"></th> -->
+            <th>Id</th>
+            <th>Name</th>
+            <th>Level</th>
+            <th>Email Id</th>
+            <th>Feedback</th>
+            <th>Resume</th>
+            <th>Interview Date & Time</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let panel of panels">
+            <!-- <td><input type="checkbox" value="{{panel.id}}" ></td> -->
+            <td>{{panel.id}}</td>
+            <td>{{panel.name}}</td>
+            <td>{{panel.grade}}</td>
+            <td>{{panel.email}}</td>
+            <td><button type="button btn" class="btn btn-success" style="margin: 2px !important;">Give Feedback</button></td>
+            
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<!-- <div class="pn4">
+  <button type="button btn" class="btn btn-success">Schedule Interview</button>
+</div>
+
+<div class="pn2"> -->
+  <!-- <h5>Meeting Scheduled : 11:30 AM</h5> -->
+  <!-- <button type="button btn" class="btn btn-success">Join the meeting</button>
+</div> -->
+
+<!-- <div class="pn3">
+  <button type="button btn" class="btn btn-success">Give Feedback</button>
+</div> -->
